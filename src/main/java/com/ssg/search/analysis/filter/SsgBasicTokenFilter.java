@@ -23,7 +23,6 @@ public class SsgBasicTokenFilter extends TokenFilter {
       CharSequence parserdData = parser.parse(termAtt.toString());
       termAtt.setEmpty();
       termAtt.append(parserdData);
-
       return true;
     }
 

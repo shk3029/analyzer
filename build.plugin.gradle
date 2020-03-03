@@ -52,3 +52,24 @@ licenseHeaders.enabled = false
 integTestRunner.enabled = false
 test.enabled = false
 testingConventions.enabled = false
+
+// Deprecated gradle 6
+//publishing {
+//    publications {
+//        maven(MavenPublication) {
+//            groupId = 'com.ssg.search'
+//            artifactId = 'ssg-search-analysis'
+//            version = '7.5.2'
+//            artifact 'build/distributions/ssg-search-analysis-7.5.2.zip'
+//        }
+//    }
+//    repositories {
+//        maven {
+//            credentials {
+//                username "$mavenUser"
+//                password "$mavenPassword"
+//            }
+//            url "http://10.203.7.77:8082/repository/ssg-search-repository/"
+//        }
+//    }
+//}
