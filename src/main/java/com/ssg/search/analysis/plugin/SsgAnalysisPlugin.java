@@ -24,11 +24,10 @@ public class SsgAnalysisPlugin extends Plugin implements AnalysisPlugin {
   public Map<String, AnalysisProvider<TokenFilterFactory>> getTokenFilters() {
     Map<String, AnalysisModule.AnalysisProvider<TokenFilterFactory>> extra = new HashMap<>();
 
-    // 한글 자모 분석 필터
-    extra.put("javacafe_jamo", SsgBasicTokenFilterFactory::new);
 
-    // 한글 초성 분석 필터
-    extra.put("javacafe_chosung", SsgChosungTokenFilterFactory::new);
+    extra.put("ssg_korean_basic", SsgBasicTokenFilterFactory::new);
+
+    extra.put("ssg_korean_chosung", SsgChosungTokenFilterFactory::new);
 
     return extra;
   }
